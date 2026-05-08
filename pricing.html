@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id" data-page-title="ui.pricing_page_title">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing · Responin</title>
+  <meta name="description" content="Responin pricing for workflow mapping, AI agent configuration, monthly monitoring, maintenance, servers, and AI licenses." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236c5ce7'/%3E%3Cstop offset='100%25' stop-color='%2300cec9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='20' fill='white'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="icons.svg" as="fetch" type="image/svg+xml" crossorigin="anonymous">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-booking-url="https://calendly.com/hi-responin/30min">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav-left">
+          <a href="index.html" class="logo" aria-label="Responin home">Responin</a>
+        </div>
+        <div class="nav-center" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link" data-i18n="ui.nav_home">Home</a>
+          <a href="learnmore.html" class="nav-link" data-i18n="ui.nav_more">Learn More</a>
+          <a href="pricing.html" class="nav-link" data-i18n="ui.nav_pricing">Pricing</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://calendly.com/hi-responin/30min" class="nav-cta booking-link" data-i18n="ui.nav_cta" target="_blank" rel="noopener noreferrer">Get Started</a>
+          <button class="nav-hamburger" type="button" data-action="open-mobile-menu" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="20" height="20"><use href="icons.svg#icon-menu"/></svg>
+          </button>
+          <div class="settings-wrap">
+            <button class="settings-btn" type="button" data-action="toggle-settings" aria-label="Settings" aria-haspopup="true" aria-controls="settingsDropdown" aria-expanded="false">
+              <svg width="20" height="20"><use href="icons.svg#icon-settings"/></svg>
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+              <div class="settings-group">
+                <div class="settings-group-label" data-i18n="ui.settings_language">Language</div>
+                <div class="lang-switch">
+                  <button class="lang-btn" data-lang="en" type="button">EN</button>
+                  <button class="lang-btn active" data-lang="id" type="button">ID</button>
+                </div>
+              </div>
+              <div class="settings-group">
+                <div class="settings-group-label" data-i18n="ui.settings_theme">Theme</div>
+                <div class="theme-options">
+                  <button class="theme-btn" data-theme-opt="light" type="button"><svg width="14" height="14"><use href="icons.svg#icon-sun"/></svg>Light</button>
+                  <button class="theme-btn active" data-theme-opt="dark" type="button"><svg width="14" height="14"><use href="icons.svg#icon-moon"/></svg>Dark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero pricing-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge"><span class="dot"></span><span data-i18n="ui.pricing_hero_badge">Modular pricing for real Indonesian operations</span></div>
+          <h1 data-i18n="ui.pricing_hero_title" data-i18n-html>Start with one workflow, then <span>add only what you need.</span></h1>
+          <p data-i18n="ui.pricing_hero_desc">Responin pricing separates setup, support, hosting, and AI usage so small teams can start lean while growing teams can add monitoring, maintenance, and smarter AI when the workload justifies it.</p>
+          <div class="hero-actions">
+            <a href="#calculator" class="btn-primary" data-i18n="ui.pricing_hero_calc_cta">Calculate Your Monthly Estimate</a>
+            <a href="#pricing-story" class="btn-secondary" data-i18n="ui.pricing_hero_story_cta">See the Pricing Story</a>
+          </div>
+        </div>
+        <aside class="pricing-summary-card fade-up" aria-label="Pricing summary">
+          <div class="pricing-summary-row"><span data-i18n="ui.pricing_summary_workflow">Workflow mapping</span><strong data-i18n="ui.pricing_summary_workflow_value">Free or Rp999.000</strong></div>
+          <div class="pricing-summary-row"><span data-i18n="ui.pricing_summary_setup">Agent setup</span><strong data-i18n="ui.pricing_summary_setup_value">Rp1.999.000 first agent</strong></div>
+          <div class="pricing-summary-row"><span data-i18n="ui.pricing_summary_additional_setup">Additional setup</span><strong data-i18n="ui.pricing_summary_additional_setup_value">Rp1.499.000/agent</strong></div>
+          <div class="pricing-summary-row"><span data-i18n="ui.pricing_summary_support">Monthly support</span><strong data-i18n="ui.pricing_summary_support_value">From Rp799.000 first agent</strong></div>
+          <div class="pricing-summary-row"><span data-i18n="ui.pricing_summary_system">System cost</span><strong data-i18n="ui.pricing_summary_system_value">1 server + AI usage / 2 agents</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section content-auto" id="pricing-story">
+      <div class="container">
+        <div class="fade-up text-center-block">
+          <p class="section-label" data-i18n="ui.pricing_story_label">Pricing Story</p>
+          <h2 class="section-title" data-i18n="ui.pricing_story_title">Think of Responin like hiring a small operations layer, not buying another SaaS login.</h2>
+          <p class="section-desc" data-i18n="ui.pricing_story_desc">Most Indonesian businesses think in monthly team cost, admin workload, and whether another coordinator is needed. The real question is simpler: can one AI operations agent reduce the need for another admin, coordinator, or manual follow-up role?</p>
+        </div>
+
+        <div class="pricing-agent-definition fade-up">
+          <div class="pricing-step-kicker" data-i18n="ui.pricing_agent_definition_kicker">What counts as one agent?</div>
+          <p data-i18n="ui.pricing_agent_definition_desc">One agent is one dedicated AI operations worker configured for a specific team, workflow, or decision context — for example, a management brainstorming agent, a finance follow-up agent, or a marketing coordination agent.</p>
+        </div>
+
+        <div class="pricing-story-grid">
+          <article class="pricing-story-card fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_story_before_kicker">Before Responin</div>
+            <h3 data-i18n="ui.pricing_story_before_title">Manual coordination keeps multiplying.</h3>
+            <p data-i18n="ui.pricing_story_before_desc">Someone checks chats, follows up orders, updates spreadsheets, reminds the team, and asks managers for approvals. As volume grows, the usual answer is adding another admin or coordinator.</p>
+          </article>
+          <article class="pricing-story-card fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_story_with_kicker">With Responin</div>
+            <h3 data-i18n="ui.pricing_story_with_title">Start with one repetitive workflow.</h3>
+            <p data-i18n="ui.pricing_story_with_desc">We map the workflow, configure the agent, then keep it running with the right support level. You pay modularly because not every team needs the same monitoring, server, or AI usage from day one.</p>
+          </article>
+          <article class="pricing-story-card fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_story_why_kicker">Why it works</div>
+            <h3 data-i18n="ui.pricing_story_why_title">The monthly cost can stay below new headcount.</h3>
+            <p data-i18n="ui.pricing_story_why_desc">For many SMBs, the first Responin setup should cost less than recruiting, onboarding, and managing one additional operations person while still keeping humans in control.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-auto" id="pricing-structure">
+      <div class="container">
+        <div class="fade-up">
+          <p class="section-label" data-i18n="ui.pricing_structure_label">Modular Pricing</p>
+          <h2 class="section-title" data-i18n="ui.pricing_structure_title">Build your monthly cost from the pieces your workflow actually needs.</h2>
+          <p class="section-desc" data-i18n="ui.pricing_structure_desc">One-time fees cover discovery and configuration. Monthly fees cover human support plus the operating system behind each agent.</p>
+        </div>
+
+        <div class="pricing-steps-grid">
+          <article class="pricing-step-card fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_step1_kicker">Step 1 · Workflow mapping · One-time cost</div>
+            <h3 data-i18n="ui.pricing_step1_title">Map Your Highest-Friction Workflows</h3>
+            <div class="price-line"><span data-i18n="ui.pricing_step1_free">Free</span> <span data-i18n="ui.pricing_step1_free_note">one-time cost for small businesses and early pilots</span></div>
+            <div class="price-line"><span data-i18n="ui.pricing_step1_corporate">Rp999.000</span> <span data-i18n="ui.pricing_step1_corporate_note">one-time corporate workflow audit</span></div>
+          </article>
+
+          <article class="pricing-step-card fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_step2_kicker">Step 2 · Agent configuration · One-time cost</div>
+            <h3 data-i18n="ui.pricing_step2_title">Configure Your Personal AI Agent</h3>
+            <div class="price-line"><span data-i18n="ui.pricing_step2_first">Rp1.999.000</span> <span data-i18n="ui.pricing_step2_first_note">one-time fixed setup for the first agent</span></div>
+            <div class="price-line"><span data-i18n="ui.pricing_step2_additional">Rp1.499.000</span> <span data-i18n="ui.pricing_step2_additional_note">one-time fixed setup for the second agent and beyond</span></div>
+            <p data-i18n="ui.pricing_step2_desc">Configuration pricing is fixed per agent, so expansion stays predictable as you add more workflows.</p>
+          </article>
+
+          <article class="pricing-step-card pricing-step-card-wide fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_support_kicker">Step 3 + 4 · Launch, expand, optimize</div>
+            <h3 data-i18n="ui.pricing_support_title">Monthly consultation, monitoring, and maintenance</h3>
+            <div class="pricing-options-grid">
+              <div>
+                <h4 data-i18n="ui.pricing_monitoring_title">Monitoring and maintenance</h4>
+                <p data-i18n="ui.pricing_monitoring_first">Rp1.699.000/month for the first agent.</p>
+                <p data-i18n="ui.pricing_monitoring_additional">Rp1.199.000/month for the second agent and beyond.</p>
+                <span class="pricing-note" data-i18n="ui.pricing_monitoring_note">Best when the agent handles live workflows that need proactive review.</span>
+              </div>
+              <div>
+                <h4 data-i18n="ui.pricing_maintenance_title">Maintenance only</h4>
+                <p data-i18n="ui.pricing_maintenance_first">Rp799.000/month for the first agent.</p>
+                <p data-i18n="ui.pricing_maintenance_additional">Rp399.000/month for the second agent and beyond.</p>
+                <span class="pricing-note" data-i18n="ui.pricing_maintenance_note">Best when the workflow is stable and only needs light upkeep.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pricing-step-card pricing-step-card-wide fade-up">
+            <div class="pricing-step-kicker" data-i18n="ui.pricing_system_kicker">System · Monthly operating cost</div>
+            <h3 data-i18n="ui.pricing_system_title">Hosting and AI usage</h3>
+            <div class="pricing-options-grid">
+              <div>
+                <h4 data-i18n="ui.pricing_server_title">Server</h4>
+                <p data-i18n="ui.pricing_server_price">Rp299.000/month per server usage.</p>
+                <p data-i18n="ui.pricing_server_rule">Server usage is calculated automatically: every two agents need one server usage.</p>
+              </div>
+              <div>
+                <h4 data-i18n="ui.pricing_ai_title">AI usage</h4>
+                <p data-i18n="ui.pricing_ai_basic">Rp399.000/month for Basic AI usage.</p>
+                <p data-i18n="ui.pricing_ai_smart">Rp1.899.000/month for Smart AI usage.</p>
+                <p data-i18n="ui.pricing_ai_rule">AI usage is calculated automatically: every two agents need one AI usage.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-calculator-section" id="calculator">
+      <div class="container">
+        <div class="fade-up">
+          <p class="section-label" data-i18n="ui.pricing_calc_label">Monthly Cost Estimator</p>
+          <h2 class="section-title" data-i18n="ui.pricing_calc_title">Calculate your modular Responin estimate.</h2>
+          <p class="section-desc" data-i18n="ui.pricing_calc_desc">Choose the number of agents and support level. Setup, server usage, and AI usage are calculated automatically: every two agents count as one server usage and one AI usage.</p>
+        </div>
+
+        <div class="pricing-calculator fade-up" data-pricing-calculator>
+          <form class="pricing-form" aria-label="Pricing calculator inputs">
+            <label class="pricing-field">
+              <span data-i18n="ui.pricing_field_business">Business type for workflow mapping</span>
+              <select name="step1Type">
+                <option value="small" data-i18n="ui.pricing_option_small">Small business / early pilot · free</option>
+                <option value="corporate" data-i18n="ui.pricing_option_corporate">Corporate · Rp999.000</option>
+              </select>
+            </label>
+
+            <label class="pricing-field">
+              <span data-i18n="ui.pricing_field_agents">Number of agents</span>
+              <div class="agent-count-control">
+                <button type="button" class="agent-count-btn" data-agent-count-action="decrease" aria-label="Reduce number of agents">−</button>
+                <input type="number" name="agentCount" min="1" step="1" value="1" inputmode="numeric" />
+                <button type="button" class="agent-count-btn" data-agent-count-action="increase" aria-label="Add number of agents">+</button>
+              </div>
+              <small data-i18n="ui.pricing_agent_note">Setup is Rp1.999.000 for the first agent, then Rp1.499.000 for each additional agent.</small>
+            </label>
+
+            <label class="pricing-field">
+              <span data-i18n="ui.pricing_field_support">Monthly support level</span>
+              <select name="supportPlan">
+                <option value="monitoring" data-i18n="ui.pricing_option_monitoring">Monitoring and maintenance</option>
+                <option value="maintenance" data-i18n="ui.pricing_option_maintenance">Maintenance only</option>
+                <option value="none" data-i18n="ui.pricing_option_none" disabled>No monthly support</option>
+              </select>
+            </label>
+
+            <div class="pricing-auto-note">
+              <strong data-i18n="ui.pricing_auto_title">Server and AI usage are automatic.</strong>
+              <span data-i18n="ui.pricing_auto_desc">Every two agents count as one server usage and one AI usage. For example: 1-2 agents = 1 usage, 3-4 agents = 2 usages.</span>
+            </div>
+
+            <label class="pricing-field">
+              <span data-i18n="ui.pricing_field_ai">AI usage type</span>
+              <select name="aiPlan">
+                <option value="basic" data-i18n="ui.pricing_option_basic">Basic AI · Rp399.000/usage/month</option>
+                <option value="smart" data-i18n="ui.pricing_option_smart">Smart AI · Rp1.899.000/usage/month</option>
+              </select>
+            </label>
+
+            <label class="pricing-field pricing-range-field">
+              <span><span data-i18n="ui.pricing_field_months">Commitment length</span> <strong data-price-result="monthsLabel">1 month</strong></span>
+              <input type="range" name="commitmentMonths" min="1" max="12" step="1" value="1" />
+              <small data-i18n="ui.pricing_months_note">6 months gets 10% all-in discount. 12 months gets 20% all-in discount.</small>
+            </label>
+
+          </form>
+
+          <aside class="pricing-results" aria-live="polite">
+            <div class="pricing-result-total">
+              <span data-i18n="ui.pricing_result_one_time">One-time launch cost</span>
+              <strong data-price-result="oneTime">Rp1.999.000</strong>
+            </div>
+            <div class="pricing-result-total monthly">
+              <span data-i18n="ui.pricing_result_monthly">Estimated monthly cost</span>
+              <strong data-price-result="monthly">Rp2.397.000</strong>
+            </div>
+            <dl class="pricing-breakdown">
+              <div><dt data-i18n="ui.pricing_breakdown_step1">Workflow mapping</dt><dd data-price-result="step1">Rp0</dd></div>
+              <div><dt data-i18n="ui.pricing_breakdown_step2">Agent configuration</dt><dd data-price-result="step2">Rp1.999.000</dd></div>
+              <div><dt data-i18n="ui.pricing_breakdown_support">Monthly support</dt><dd data-price-result="support">Rp1.699.000</dd></div>
+              <div><dt data-i18n="ui.pricing_breakdown_server">Server</dt><dd data-price-result="server">Rp399.000 · 1 usage</dd></div>
+              <div><dt data-i18n="ui.pricing_breakdown_ai">AI usage</dt><dd data-price-result="ai">Rp399.000 · 1 usage</dd></div>
+              <div class="pricing-breakdown-highlight"><dt data-i18n="ui.pricing_breakdown_months">Commitment length</dt><dd data-price-result="months">1 month</dd></div>
+              <div class="pricing-breakdown-highlight"><dt data-i18n="ui.pricing_breakdown_discount">Commitment discount</dt><dd data-price-result="discount">0%</dd></div>
+              <div class="pricing-breakdown-highlight pricing-breakdown-highlight-total"><dt data-i18n="ui.pricing_breakdown_total">All-in total after discount</dt><dd data-price-result="commitmentTotal">Rp4.396.000</dd></div>
+            </dl>
+            <p class="pricing-disclaimer" data-i18n="ui.pricing_disclaimer">This calculator is an estimate. Final scope can vary after the workflow audit, especially when integrations, approval gates, or AI usage volume increase.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container text-center fade-up">
+        <p class="section-label" data-i18n="ui.pricing_cta_label">Ready to price your real workflow?</p>
+        <h2 data-i18n="ui.pricing_cta_title">Book a free audit and we will map the exact cost.</h2>
+        <p data-i18n="ui.pricing_cta_desc">Bring one repetitive workflow. We will identify what to automate first and what your first agent should cost to launch and run.</p>
+        <a href="https://calendly.com/hi-responin/30min" class="btn-primary booking-link" data-i18n="ui.pricing_cta_button" target="_blank" rel="noopener noreferrer">Book Free Workflow Audit</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo">Responin</div>
+        <p data-i18n="ui.footer_desc">AI-driven consultancy and automation agency. Transforming business operations through intelligent, autonomous workflows powered by OpenClaw.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_solutions">Solutions</h4>
+        <ul>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_1">Reminders</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_2">Data Entry</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_3">Email Automation</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_4">Process Mapping</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_5">Financial Monitoring</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_6">CRM Workflows</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_company">Company</h4>
+        <ul>
+          <li><a href="index.html#why" data-i18n="ui.foot_comp_1">About</a></li>
+          <li><a href="index.html#how" data-i18n="ui.foot_comp_2">How It Works</a></li>
+          <li><a href="pricing.html" data-i18n="ui.nav_pricing">Pricing</a></li>
+          <li><a href="learnmore.html#industries" data-i18n="ui.foot_comp_3">Industries</a></li>
+          <li><a href="learnmore.html#vs-generic" data-i18n="ui.foot_comp_4">Compare</a></li>
+          <li><a href="learnmore.html#faq" data-i18n="ui.foot_comp_6">FAQ</a></li>
+          <li><a href="index.html#cta" data-i18n="ui.foot_comp_5">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_legal">Legal</h4>
+        <ul>
+          <li><a href="privacy.html" data-i18n="ui.foot_legal_1">Privacy Policy</a></li>
+          <li><a href="termsofuse.html" data-i18n="ui.foot_legal_2">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Responin. All rights reserved.</span>
+        <span>Powered by OpenClaw</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-menu-overlay" id="mobileOverlay" aria-hidden="true" data-action="close-mobile-menu"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo" aria-label="Responin home">Responin</a>
+      <button class="mobile-menu-close" type="button" data-action="close-mobile-menu" aria-label="Close menu"><svg width="18" height="18"><use href="icons.svg#icon-x"/></svg></button>
+    </div>
+    <div class="mobile-menu-body">
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-menu-link" data-i18n="ui.nav_home" data-mobile-close>Home</a>
+        <a href="learnmore.html" class="mobile-menu-link" data-i18n="ui.nav_more" data-mobile-close>Learn More</a>
+        <a href="pricing.html" class="mobile-menu-link" data-i18n="ui.nav_pricing" data-mobile-close>Pricing</a>
+      </div>
+      <div class="mobile-menu-settings">
+        <div class="settings-group">
+          <div class="settings-group-label" data-i18n="ui.settings_language">Language</div>
+          <div class="lang-switch"><button class="lang-btn" data-lang="en" type="button">EN</button><button class="lang-btn active" data-lang="id" type="button">ID</button></div>
+        </div>
+        <div class="settings-group">
+          <div class="settings-group-label" data-i18n="ui.settings_theme">Theme</div>
+          <div class="theme-options"><button class="theme-btn" data-theme-opt="light" type="button"><svg width="14" height="14"><use href="icons.svg#icon-sun"/></svg>Light</button><button class="theme-btn active" data-theme-opt="dark" type="button"><svg width="14" height="14"><use href="icons.svg#icon-moon"/></svg>Dark</button></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
