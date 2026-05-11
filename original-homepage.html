@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responin · Personal AI Operations Agent for Business Teams</title>
+  <meta name="description" content="Stop losing hours to repetitive operations. Responin is your personal AI agent that remembers context, executes workflows, and keeps humans in control." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236c5ce7'/%3E%3Cstop offset='100%25' stop-color='%2300cec9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='20' fill='white'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Responin · Your Personal AI Agent for Business Automation" />
+  <meta property="og:description" content="Not a generic AI tool. Your personal Responin agent learns your workflows, remembers your context, and operates on your behalf. Built for your business, not everyone's." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://responin.com" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Responin · Your Personal AI Agent for Business Automation" />
+  <meta name="twitter:description" content="Your personal AI agent that learns your workflows, remembers your context, and operates your business on your behalf." />
+  <meta name="theme-color" content="#6c5ce7" />
+  <link rel="canonical" href="https://responin.com/" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="icons.svg" as="fetch" type="image/svg+xml" crossorigin="anonymous">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Responin",
+      "url": "https://responin.com"
+    }
+  </script>
+</head>
+<body data-booking-url="https://calendly.com/hi-responin/30min">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav-left">
+          <a href="index.html" class="logo" aria-label="Responin home">Responin</a>
+        </div>
+        <div class="nav-center" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link" data-i18n="ui.nav_home">Home</a>
+          <a href="learnmore.html" class="nav-link" data-i18n="ui.nav_more">Learn More</a>
+          <a href="pricing.html" class="nav-link" data-i18n="ui.nav_pricing">Pricing</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://calendly.com/hi-responin/30min" class="nav-cta booking-link" data-i18n="ui.nav_cta" target="_blank" rel="noopener noreferrer">Get Started</a>
+          <button class="nav-hamburger" type="button" data-action="open-mobile-menu" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="20" height="20"><use href="icons.svg#icon-menu"/></svg>
+          </button>
+          <div class="settings-wrap">
+            <button class="settings-btn" type="button" data-action="toggle-settings" aria-label="Settings" aria-haspopup="true" aria-controls="settingsDropdown" aria-expanded="false">
+              <svg width="20" height="20"><use href="icons.svg#icon-settings"/></svg>
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+              <div class="settings-group">
+                <div class="settings-group-label" data-i18n="ui.settings_language">Language</div>
+                <div class="lang-switch">
+                  <button class="lang-btn" data-lang="en" type="button">EN</button>
+                  <button class="lang-btn active" data-lang="id" type="button">ID</button>
+                </div>
+              </div>
+              <div class="settings-group">
+                <div class="settings-group-label" data-i18n="ui.settings_theme">Theme</div>
+                <div class="theme-options">
+                  <button class="theme-btn" data-theme-opt="light" type="button">
+                    <svg width="14" height="14"><use href="icons.svg#icon-sun"/></svg>
+                    Light
+                  </button>
+                  <button class="theme-btn active" data-theme-opt="dark" type="button">
+                    <svg width="14" height="14"><use href="icons.svg#icon-moon"/></svg>
+                    Dark
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <span data-i18n="ui.hero_badge">Agen AI Personal Anda</span>
+          </div>
+          <h1 data-i18n="ui.hero_title" data-i18n-html>Stop Losing <span>2+ Hours a Day</span> to Busywork</h1>
+          <p data-i18n="ui.hero_desc">Responin is your personal AI operations agent that remembers your business context, executes repetitive workflows, and keeps you in control for sensitive decisions.</p>
+          <div class="hero-actions">
+            <a href="https://calendly.com/hi-responin/30min" class="btn-primary booking-link" target="_blank" rel="noopener noreferrer" data-i18n="ui.hero_cta_primary">Book Free 30-Minute Workflow Audit</a>
+            <a href="#chat-demo" class="btn-secondary" data-i18n="ui.hero_cta_secondary">See Real Workflow Demos</a>
+          </div>
+        </div>
+        <aside class="hero-preview fade-up" aria-labelledby="hero-preview-title">
+          <div class="chat-topbar">
+            <div class="chat-topbar-avatar">R</div>
+            <div class="chat-topbar-info">
+              <h2 id="hero-preview-title" data-i18n="ui.chat_bot_name">Responin Assistant</h2>
+              <span data-i18n="ui.chat_bot_status">● Online, remembers your business</span>
+            </div>
+          </div>
+          <div class="hero-preview-body" aria-hidden="true">
+            <div class="chat-msg user is-visible">
+              <div class="chat-msg-avatar">Y</div>
+              <div class="chat-msg-bubble" data-i18n="ui.chat_ex_1">📋 Check invoice status</div>
+            </div>
+            <div class="chat-msg agent is-visible">
+              <div class="chat-msg-avatar">R</div>
+              <div class="chat-msg-bubble">
+                <span class="highlight">45%</span>
+                <span data-i18n="ui.stat_1_label">Avg. support time reduced</span>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <div class="chat-demo-input" data-i18n="ui.chat_placeholder">Ask anything about your business...</div>
+              <span class="chat-send-btn">
+                <svg width="16" height="16"><use href="icons.svg#icon-send"/></svg>
+              </span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Proof Strip -->
+    <section class="proof-strip" aria-label="Responin impact metrics">
+      <div class="container">
+        <div class="stats-bar fade-up">
+          <div class="stat">
+            <div class="stat-value">45%</div>
+            <div class="stat-label" data-i18n="ui.stat_1_label">Avg. support time reduced</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">60%</div>
+            <div class="stat-label" data-i18n="ui.stat_2_label">Routine tasks automated</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label" data-i18n="ui.stat_3_label">Always-on operations</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">&lt;30s</div>
+            <div class="stat-label" data-i18n="ui.stat_4_label">From command to action</div>
+          </div>
+        </div>
+        <p class="stats-footnote" data-i18n="ui.stats_footnote">Based on early deployment data</p>
+      </div>
+    </section>
+
+  <!-- Chat Demo -->
+  <section class="chat-demo" id="chat-demo">
+    <div class="container">
+      <div class="chat-mode-tabs fade-up" data-chat-mode-tabs role="tablist" aria-label="Chat demo modes">
+        <button class="chat-mode-tab active" data-chat-mode="dm" type="button" role="tab" aria-selected="true" aria-controls="dm-panel" id="dm-mode-tab">
+          <svg width="16" height="16"><use href="icons.svg#icon-message"/></svg>
+          <span data-i18n="ui.chat_mode_dm">Direct Message</span>
+        </button>
+        <button class="chat-mode-tab" data-chat-mode="group" type="button" role="tab" aria-selected="false" aria-controls="gc-panel" id="gc-mode-tab">
+          <svg width="16" height="16"><use href="icons.svg#icon-users"/></svg>
+          <span data-i18n="ui.chat_mode_gc">Group Chat</span>
+        </button>
+      </div>
+
+      <div class="chat-mode-panel" id="dm-panel" role="tabpanel" aria-labelledby="dm-mode-tab">
+        <div class="chat-demo-header fade-up" id="dm-header">
+          <p class="section-label" data-i18n="ui.chat_label">See It In Action</p>
+          <h2 class="section-title" data-i18n="ui.chat_title">Your personal AI agent, always one message away.</h2>
+          <p class="section-desc" data-i18n="ui.chat_desc">Ask anything in plain language. Your agent checks your systems, remembers context, and gives you the answer instantly.</p>
+        </div>
+
+        <div class="chat-tabs fade-up" id="dm-tabs" data-chat-tabs="primary" role="tablist" aria-label="Direct message examples">
+          <button class="chat-tab active" data-scenario="invoice" type="button" role="tab" aria-selected="true" data-i18n="ui.chat_ex_1">📋 Check invoice status</button>
+          <button class="chat-tab" data-scenario="delivery" type="button" role="tab" aria-selected="false" data-i18n="ui.chat_ex_2">📦 Track deliveries</button>
+          <button class="chat-tab" data-scenario="sales" type="button" role="tab" aria-selected="false" data-i18n="ui.chat_ex_3">📊 Summarize sales</button>
+          <button class="chat-tab" data-scenario="email" type="button" role="tab" aria-selected="false" data-i18n="ui.chat_ex_4">✉️ Draft &amp; send emails</button>
+          <button class="chat-tab" data-scenario="customer" type="button" role="tab" aria-selected="false" data-i18n="ui.chat_ex_5">🔍 Look up customer history</button>
+        </div>
+
+        <div class="chat-window fade-up" id="dm-window" aria-live="polite">
+          <div class="chat-topbar">
+            <div class="chat-topbar-avatar">R</div>
+            <div class="chat-topbar-info">
+              <h4 data-i18n="ui.chat_bot_name">Responin Assistant</h4>
+              <span data-i18n="ui.chat_bot_status">● Online, remembers your business</span>
+            </div>
+          </div>
+          <div class="chat-messages" id="chatMessages"></div>
+          <div class="chat-input-bar" aria-hidden="true">
+            <div class="chat-demo-input" data-i18n="ui.chat_placeholder">Ask anything about your business...</div>
+            <span class="chat-send-btn">
+              <svg width="16" height="16"><use href="icons.svg#icon-send"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-mode-panel is-hidden" id="gc-panel" role="tabpanel" aria-labelledby="gc-mode-tab" aria-hidden="true">
+        <div class="chat-demo-header fade-up" id="gc-header">
+          <p class="section-label" data-i18n="ui.gc_label">Or... Add It to a Group Chat</p>
+          <h2 class="section-title" data-i18n="ui.gc_title">Your AI agent works alongside your team, like a colleague who never sleeps.</h2>
+          <p class="section-desc" data-i18n="ui.gc_desc">Add Responin to your team channels. It monitors, summarizes, escalates, and acts, so your team spends less time coordinating and more time executing.</p>
+        </div>
+
+        <div class="chat-tabs fade-up" id="gc-tabs" data-chat-tabs="group" role="tablist" aria-label="Group chat examples">
+          <button class="chat-tab active" data-gc-scenario="project" type="button" role="tab" aria-selected="true" data-i18n="ui.gc_ex_1">📋 Project status update</button>
+          <button class="chat-tab" data-gc-scenario="escalation" type="button" role="tab" aria-selected="false" data-i18n="ui.gc_ex_2">🚨 Order escalation</button>
+          <button class="chat-tab" data-gc-scenario="briefing" type="button" role="tab" aria-selected="false" data-i18n="ui.gc_ex_3">📊 Weekly briefing</button>
+        </div>
+
+        <div class="chat-window group-chat-window fade-up" id="gc-window" aria-live="polite">
+          <div class="chat-topbar group-chat-topbar">
+            <div class="gc-avatars">
+              <div class="gc-avatar gc-avatar-a">A</div>
+              <div class="gc-avatar gc-avatar-s">S</div>
+              <div class="gc-avatar gc-avatar-r">R</div>
+            </div>
+            <div class="chat-topbar-info">
+              <h4 data-i18n="ui.gc_group_name">Marketing & Ops</h4>
+              <span data-i18n="ui.gc_group_status">Rizal, Andi, Sari & Responin</span>
+            </div>
+          </div>
+          <div class="chat-messages" id="gcMessages"></div>
+          <div class="chat-input-bar" aria-hidden="true">
+            <div class="chat-demo-input" data-i18n="ui.gc_placeholder">Type a message...</div>
+            <span class="chat-send-btn">
+              <svg width="16" height="16"><use href="icons.svg#icon-send"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section class="section content-auto" id="problem">
+    <div class="container">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="ui.problem_label">The Problem</p>
+        <h2 class="section-title" data-i18n="ui.problem_title">Your best people are doing your least important work.</h2>
+        <p class="section-desc" data-i18n="ui.problem_desc">Every business has work that's repetitive, rule-driven, and time-consuming, yet doesn't require human judgment to execute. Monitoring dashboards. Drafting routine emails. Logging CRM entries. Checking order status. Thousands of hours consumed annually by tasks that an AI agent can handle better.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card fade-up">
+          <div class="problem-icon">⏳</div>
+          <h3 data-i18n="ui.problem_card_1_title">The Admin Black Hole</h3>
+          <p data-i18n="ui.problem_card_1_desc">Average employees spend 2+ hours daily on admin tasks like data entry, status updates, meeting notes, and follow-ups. That's 25% of every workday that produces zero strategic value.</p>
+        </div>
+        <div class="problem-card fade-up">
+          <div class="problem-icon">🔗</div>
+          <h3 data-i18n="ui.problem_card_2_title">Disconnected Systems</h3>
+          <p data-i18n="ui.problem_card_2_desc">Your CRM doesn't talk to your email. Your calendar doesn't update your project board. Your finance tool doesn't flag your operations. Every gap is a dropped ball and a manual bridge.</p>
+        </div>
+        <div class="problem-card fade-up">
+          <div class="problem-icon">📉</div>
+          <h3 data-i18n="ui.problem_card_3_title">Human Bottlenecks</h3>
+          <p data-i18n="ui.problem_card_3_desc">Every process that requires a person to "check and route" is a process that stops when that person is busy, asleep, or on leave. Your operations run at human speed, not business speed.</p>
+        </div>
+        <div class="problem-card fade-up">
+          <div class="problem-icon">💸</div>
+          <h3 data-i18n="ui.problem_card_4_title">Scale = More Headcount</h3>
+          <p data-i18n="ui.problem_card_4_desc">Traditional scaling means hiring more people to do more of the same. More coordinators, more assistants, more overhead. The cost compounds, but the output per person doesn't.</p>
+        </div>
+        <div class="problem-card fade-up">
+          <div class="problem-icon">🧠</div>
+          <h3 data-i18n="ui.problem_card_5_title">Decision Fatigue & Information Overload</h3>
+          <p data-i18n="ui.problem_card_5_desc">Your managers drown in dashboards, reports, and notifications daily. Critical signals get buried in noise; important decisions delayed or made on gut instead of data.</p>
+        </div>
+        <div class="problem-card fade-up">
+          <div class="problem-icon">🎯</div>
+          <h3 data-i18n="ui.problem_card_6_title">Inconsistent Execution</h3>
+          <p data-i18n="ui.problem_card_6_desc">The same process gets done differently by different people. Steps get skipped, details slip, and quality depends on who's working that day, not on a reliable standard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Responin -->
+  <section class="section content-auto" id="why">
+    <div class="container">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="ui.why_label">Why Responin</p>
+        <h2 class="section-title" data-i18n="ui.why_title">Three things no generic AI can do for your business.</h2>
+      </div>
+      <div class="why-pillars fade-up">
+        <div class="why-pillar">
+          <div class="why-pillar-icon">🧠</div>
+          <h3 data-i18n="ui.why_p1_title">Learns, Doesn't Just Execute</h3>
+          <p data-i18n="ui.why_p1_desc">Your agent builds institutional memory, remembering your people, processes, and preferences. It gets smarter about your business every single day, not just every prompt.</p>
+        </div>
+        <div class="why-pillar">
+          <div class="why-pillar-icon">⚡</div>
+          <h3 data-i18n="ui.why_p2_title">Acts, Doesn't Just Advise</h3>
+          <p data-i18n="ui.why_p2_desc">Goes beyond "here's what you should do." Your Responin agent sends the email, updates the CRM, escalates the ticket, and follows up on your behalf, with your context.</p>
+        </div>
+        <div class="why-pillar">
+          <div class="why-pillar-icon">🛡️</div>
+          <h3 data-i18n="ui.why_p3_title">Safe, Not Reckless</h3>
+          <p data-i18n="ui.why_p3_desc">Human-in-the-loop safeguards mean you approve what matters. The agent handles the volume; you handle the nuance. Your data stays in your environment, never shared, never training public models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section content-auto" id="how">
+    <div class="container">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="ui.how_label">How It Works</p>
+        <h2 class="section-title" data-i18n="ui.how_title">From chaos to autonomy in four weeks.</h2>
+        <p class="section-desc" data-i18n="ui.how_desc">We don't plug in a tool and walk away. We architect, deploy, and refine an AI operation that becomes part of how your business runs.</p>
+      </div>
+      <div class="steps">
+        <div class="step fade-up">
+          <div class="step-number">1</div>
+          <h3 data-i18n="ui.step_1_title">We Learn Your Business</h3>
+          <p data-i18n="ui.step_1_desc">We dive into your workflows, identify the highest-ROI automation opportunities, and map every handoff, bottleneck, and exception. You don't need to prepare anything; just tell us what keeps you up at night.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-number">2</div>
+          <h3 data-i18n="ui.step_2_title">Your Agent Gets Built</h3>
+          <p data-i18n="ui.step_2_desc">We design your personal AI agent: its skills, memory, triggers, escalation rules, and integrations. Every agent is built for your specific business logic and learns your way of working. No templates, no one-size-fits-all.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-number">3</div>
+          <h3 data-i18n="ui.step_3_title">It Starts Working on Day 1</h3>
+          <p data-i18n="ui.step_3_desc">We launch your agent into production with human-in-the-loop safeguards. It starts handling volume immediately; your people handle the nuance. You'll feel the time savings from week one.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-number">4</div>
+          <h3 data-i18n="ui.step_4_title">It Keeps Getting Smarter</h3>
+          <p data-i18n="ui.step_4_desc">Your agent learns from every interaction. We continuously refine, expand scope, and add new automations as your business grows, so your AI operations compound in value over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn More Bridge -->
+  <section class="section content-auto" id="learnmore-bridge">
+    <div class="container">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="ui.bridge_label">Next Step</p>
+        <h2 class="section-title" data-i18n="ui.bridge_title">Want the full picture before booking?</h2>
+        <p class="section-desc" data-i18n="ui.bridge_desc">Explore detailed solutions, industry examples, and a side-by-side comparison so the consultation can focus on your exact workflow.</p>
+      </div>
+      <div class="navigation-card-grid">
+        <a href="learnmore.html#solutions" class="navigation-card fade-up">
+          <div class="problem-icon">🧩</div>
+          <h3 data-i18n="ui.bridge_card_1_title">Core Solutions</h3>
+          <p data-i18n="ui.bridge_card_1_desc">See the concrete workflows Responin can run across reminders, inboxes, CRM, reporting, and support.</p>
+        </a>
+        <a href="learnmore.html#industries" class="navigation-card fade-up">
+          <div class="problem-icon">🏭</div>
+          <h3 data-i18n="ui.bridge_card_2_title">Industry Playbooks</h3>
+          <p data-i18n="ui.bridge_card_2_desc">Review before/after scenarios for retail, finance, startup teams, and other operational contexts.</p>
+        </a>
+        <a href="learnmore.html#vs-generic" class="navigation-card fade-up">
+          <div class="problem-icon">⚖️</div>
+          <h3 data-i18n="ui.bridge_card_3_title">Responin vs Generic AI</h3>
+          <p data-i18n="ui.bridge_card_3_desc">Understand the difference between one-off chat tools and a persistent, action-taking personal agent.</p>
+        </a>
+      </div>
+      <div class="hero-actions fade-up justify-center mt-24">
+        <a href="learnmore.html" class="btn-secondary" data-i18n="ui.bridge_cta">Explore the full Learn More page</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section" id="cta">
+    <div class="container fade-up">
+      <h2 data-i18n="ui.cta_title">Ready to Automate?</h2>
+      <p data-i18n="ui.cta_desc">Join the waitlist for a free AI readiness consultation and take the first step toward autonomous operations.</p>
+      <a href="https://calendly.com/hi-responin/30min" class="btn-primary booking-link" target="_blank" rel="noopener noreferrer" data-i18n="ui.cta_btn">Get Your Free AI Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo">Responin</div>
+        <p data-i18n="ui.footer_desc">AI-driven consultancy and automation agency. Transforming business operations through intelligent, autonomous workflows powered by OpenClaw.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_solutions">Solutions</h4>
+        <ul>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_1">Reminders</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_2">Data Entry</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_3">Email Automation</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_4">Process Mapping</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_5">Financial Monitoring</a></li>
+          <li><a href="learnmore.html#solutions" data-i18n="ui.foot_sol_6">CRM Workflows</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_company">Company</h4>
+        <ul>
+          <li><a href="#why" data-i18n="ui.foot_comp_1">About</a></li>
+          <li><a href="#how" data-i18n="ui.foot_comp_2">How It Works</a></li>
+          <li><a href="pricing.html" data-i18n="ui.nav_pricing">Pricing</a></li>
+          <li><a href="learnmore.html#industries" data-i18n="ui.foot_comp_3">Industries</a></li>
+          <li><a href="learnmore.html#vs-generic" data-i18n="ui.foot_comp_4">Compare</a></li>
+          <li><a href="learnmore.html#faq" data-i18n="ui.foot_comp_6">FAQ</a></li>
+          <li><a href="#cta" data-i18n="ui.foot_comp_5">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ui.footer_legal">Legal</h4>
+        <ul>
+          <li><a href="privacy.html" data-i18n="ui.foot_legal_1">Privacy Policy</a></li>
+          <li><a href="termsofuse.html" data-i18n="ui.foot_legal_2">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Responin. All rights reserved.</span>
+        <span>Powered by OpenClaw</span>
+      </div>
+    </div>
+  </footer>
+
+  </main>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay" data-action="close-mobile-menu" aria-hidden="true"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <span class="logo" id="mobileMenuTitle">Responin</span>
+      <button class="mobile-menu-close" type="button" data-action="close-mobile-menu" aria-label="Close menu">
+        <svg width="18" height="18"><use href="icons.svg#icon-x"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu-body">
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-menu-link" data-i18n="ui.nav_home" data-mobile-close>Home</a>
+        <a href="learnmore.html" class="mobile-menu-link" data-i18n="ui.nav_more" data-mobile-close>Learn More</a>
+        <a href="pricing.html" class="mobile-menu-link" data-i18n="ui.nav_pricing" data-mobile-close>Pricing</a>
+      </div>
+    </div>
+    <div class="mobile-menu-settings">
+      <div class="settings-group-label" data-i18n="ui.settings_language">Language</div>
+      <div class="lang-switch mb-12">
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn active" data-lang="id" type="button">ID</button>
+      </div>
+      <div class="settings-group-label" data-i18n="ui.settings_theme">Theme</div>
+      <div class="theme-options">
+        <button class="theme-btn" data-theme-opt="light" type="button">
+          <svg width="14" height="14"><use href="icons.svg#icon-sun"/></svg>
+          Light
+        </button>
+        <button class="theme-btn active" data-theme-opt="dark" type="button">
+          <svg width="14" height="14"><use href="icons.svg#icon-moon"/></svg>
+          Dark
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky CTA Mobile -->
+  <div class="sticky-cta-mobile" id="stickyCtaMobile">
+    <a href="https://calendly.com/hi-responin/30min" class="booking-link" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16"><use href="icons.svg#icon-mail"/></svg>
+      <span data-i18n="ui.sticky_cta_text">Join the Waitlist</span>
+    </a>
+  </div>
+
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
