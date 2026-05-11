@@ -697,6 +697,18 @@ function initThemeMessage() {
   });
 }
 
+function initV2HomepageTasks() {
+  const tasks = Array.from(document.querySelectorAll('[data-v2-task-feed] .v2-task'));
+  if (tasks.length < 2 || AppState.reducedMotion) return;
+
+  let activeIndex = Math.max(0, tasks.findIndex((task) => task.classList.contains('active')));
+  window.setInterval(() => {
+    tasks[activeIndex]?.classList.remove('active');
+    activeIndex = (activeIndex + 1) % tasks.length;
+    tasks[activeIndex]?.classList.add('active');
+  }, 2600);
+}
+
 function handleDocumentClick(event) {
   const actionEl = event.target.closest('[data-action]');
   const langEl = event.target.closest('[data-lang]');
@@ -772,6 +784,7 @@ function initApp() {
   initStickyCta();
   initPricingCalculator();
   initThemeMessage();
+  initV2HomepageTasks();
 
   document.addEventListener('click', handleDocumentClick);
   document.addEventListener('keydown', handleDocumentKeydown);
